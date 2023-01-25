@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  deadline: 2023-01-26
+  complete: false
+  subject_name: MyText
+
+two:
+  name: MyText
+  deadline: 2023-01-26
+  complete: false
+  subject_name: MyText
