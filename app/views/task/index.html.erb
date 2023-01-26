@@ -4,7 +4,7 @@
 
 <!--<% if @task %>-->
     <%= @task.each do |task| %>
-        <li>課題名： <%= task.name %></li>
+        <li>課題名： <%= link_to(task.name, "/task/#{task.id}") %></li>
         <li>授業名： <%= task.subject_name %></li>
         <li>期限：　<%= task.deadline %></li>
         <li>課題内容：　<%= task.detail %> </li>
