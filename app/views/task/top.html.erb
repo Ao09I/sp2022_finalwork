@@ -1,8 +1,11 @@
-<%= month_calendar do |date| %>
+<%= month_calendar events: @task do |date, tasks| %>
     <%= date %>
-    <p>課題名</p>
-    <p>終わった/終わってない</p>
+
+    <%= tasks.each do |task| %>
+    <li><%= task.name %></li>
+    <% end %>
 <% end %>
 
 
-<h2><%= link_to("課題の登録はこちら", "/top/add_task") %></h2>
+<h2><%= link_to("課題の登録はこちら", "/task/new") %></h2>
+<h2><%= link_to("登録されている課題一覧はこちら", "/task/index")%></h2>

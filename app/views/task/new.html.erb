@@ -1,10 +1,10 @@
 
 <h2>課題の登録ページ</h2>
 <a>課題の登録ページです。課題名、授業名、課題の詳細を入力してください</a>
+<!-- createアクションに送る　-->
 
 
-
-<%= form_tag("/task/add_task") do %>
+<%= form_tag ("/task/create") do %>
         <textarea rows="1" cols="35" name="task">課題名を入力してください</textarea>
         <br>
         <br><textarea rows="1" cols="35" name="subject_name">授業名を入力してください</textarea>

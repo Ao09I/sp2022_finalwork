@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   get 'top' => "task#top"
-  get "/top/add_task" => "task#add_task"
+  get "task/new" => "task#new"
+  post "task/create" => "task#create"
+  get "task/index" => "task#index"
+
+  #ページ追加のためのpost設定する
+
+
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

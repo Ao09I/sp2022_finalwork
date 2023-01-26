@@ -1,0 +1,16 @@
+<br>
+<h2>課題一覧</h2>
+<p>順番に終わらせていこう！</p>
+
+<!--<% if @task %>-->
+    <%= @task.each do |task| %>
+        <li>課題名： <%= task.name %></li>
+        <li>授業名： <%= task.subject_name %></li>
+        <li>期限：　<%= task.deadline %></li>
+        <li>課題内容：　<%= task.detail %> </li>
+        <br>
+    <% end %>
+<!--<% end %>-->
+
+<br>
+<%= link_to("トップページに戻る", "/top")%>
