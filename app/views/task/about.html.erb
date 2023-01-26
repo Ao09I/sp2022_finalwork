@@ -1,10 +1,14 @@
 
+<h4>授業名</h4>
 <%= @task.subject_name %>
 <br>
-<br><%= @task.name %>
+<h4>課題名</h4>
+<%= @task.name %>
 <br>
-<br><%= @task.detail %>
+<h4>課題内容詳細</h4>
+<%= @task.detail %>
+<br>
 <br>
 <p>完了した場合は下の完了を押して課題ページを削除してください</p>
-<%= link_to "完了", "/task/#{@task.id}", method: :delete %>
+<%= link_to '完了', "/task/#{@task.id}/destroy", data: { turbo_method: :post } %>
 <%= link_to("トップページに戻る", "/top") %>

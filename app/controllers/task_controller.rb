@@ -28,8 +28,10 @@ class TaskController < ApplicationController
   end
   
   def destroy
-    task = Task.find_by(id: params[:id])
-    task.destroy
+    @task = Task.find(params[:id])
+    @task.destroy
     redirect_to("/top")
   end
+
 end
+

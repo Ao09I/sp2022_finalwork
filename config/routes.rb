@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post "task/create" => "task#create"
   get "task/index" => "task#index"
   get "task/:id" => "task#about"
-  delete "task/:id" => "task#destroy"
+  post "task/:id/destroy" => "task#destroy"
 
   #ページ追加のためのpost設定する
 
