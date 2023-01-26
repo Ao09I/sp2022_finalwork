@@ -1,3 +1,8 @@
+<br>
+<h2>課題管理カレンダー</h2>
+
+
+
 <%= month_calendar events: @task do |date, tasks| %>
     <%= date %>
 
@@ -7,5 +12,5 @@
 <% end %>
 
 
-<h2><%= link_to("課題の登録はこちら", "/task/new") %></h2>
-<h2><%= link_to("登録されている課題一覧はこちら", "/task/index")%></h2>
+<li><%= link_to("課題の登録はこちら", "/task/new") %></li>
+<li><%= link_to("登録されている課題一覧はこちら", "/task/index")%></li>

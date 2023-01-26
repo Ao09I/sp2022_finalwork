@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get "task/:id" => "task#about"
   post "task/:id/destroy" => "task#destroy"
 
-  #ページ追加のためのpost設定する
 
 
 

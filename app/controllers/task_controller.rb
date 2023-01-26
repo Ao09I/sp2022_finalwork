@@ -19,7 +19,7 @@ class TaskController < ApplicationController
   end
 
   def index
-    @task = Task.all.order(created_at: :asc)
+    @task = Task.all.order(deadline: :asc)
   end
 
   def about
